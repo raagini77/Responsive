@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+       <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link href="../CSS/style2.css" rel="stylesheet" type="text/css"/>
+ <!--<script src="../JavaScript/JavaScript2.js" type="text/javascript"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+  <script src="../JavaScript/JavaScript3.js" type="text/javascript"></script>
+<style>
+    body{
+        background-image: url("../CSS/3.jpg");
+    background-size: cover;  
+           background-attachment: fixed;
+           background-position: center center;
+           background-repeat: no-repeat;
+           height:100vh;
+           width: 100%; 
+
+    }
+  @media (max-width:768px) {
+   body{
+        background-image: url("../CSS/4.jpg");
+     background-size: cover;  
+           background-attachment: fixed;
+           background-position: center center;
+           background-repeat: no-repeat;
+           height:100vh;
+           width: 100%; 
+    }
+ }
+
+    
+</style>
+
+
+</head>
+<body>
+     <!-- <img src="../CSS/1.jpg" class="img-responsive" style="background-size: cover;background-position: fixed;opacity: 0.2;position: absolute; z-index: -1;width:100%;height:auto"/>-->
+    <nav class="navbar navbar-inverse" style="padding-top: 0px">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="jquery.html">Jquery</a></li>
+        
+        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+       
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="loginmon.html"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+        <li><a href="Register.html"><span class="glyphicon glyphicon-log-in"></span> SignUp</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+       
+   <div class="container" id="con">
+  <h2>Registration form</h2>
+  <form id="form-validation" name= "registration" class="form-horizontal" action="done.html" style="color:red">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="FirstName" style="color:black">First Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="firstname" placeholder="Enter FirstName" name="firstname">
+      </div>
+    </div>
+       <div class="form-group">
+      <label class="control-label col-sm-2" for="LasttName" style="color:black">Last Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="lasttname" placeholder="Enter LastName" name="lastname">
+      </div>
+    </div>
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="email" style="color:black">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control " id="email" placeholder="Enter email" name="email">
+      </div>
+    </div>
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="UserName" style="color:black">User Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="username" placeholder="Enter UserName" name="username">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd" style="color:black">Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+      </div>
+    </div>
+       <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd" style="color:black">Re-Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="confirm_password" placeholder="Confirm password" name="confirm_password">
+      </div>
+    </div>
+      <div class="form-group">
+          <label for="Gender" style="color:black" class="col-sm-2 control-label">Gender:</label>
+          <div class="col-sm-10">
+               <div class="radio-inline" onclick="call()">
+                   <label style="color:black">
+                      <input  id="radio1" name="gender" value="male" type="radio">Male</label><span class="please"></span>
+               </div>
+               <div class="radio-inline"  onclick="calle()" >
+                   <label style="color:black">
+                       <input id="radio2" name="gender" value="female" type="radio">Female</label> <span class="please1"></span>
+               </div>
+              
+        <div id="divResult"></div>
+          </div>
+      </div>
+    <div class="form-group">  
+        <label for="agree"  style="color:black" class="col-sm-2 control-label">I Accept:</label>
+      
+         <div class="col-sm-4" style="margin-left: 20px">
+             <div class="checkbox">
+         
+         <input type="checkbox" name="agree">
+         </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" id="btnSubmit" value="submit" class="btn btn-default">Submit</button>
+        <br/> <br/>
+        <div id="divResult"></div>
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,49 @@
+body{
+        background-image: url("../CSS/4.jpg");
+     background-size: cover;  
+           background-attachment: fixed;
+           background-position: center center;
+           background-repeat: no-repeat;
+           height:100vh;
+           width: 100%;
+
+    }
+
+ h1{
+    background: linear-gradient(to right,lightcoral,lightcyan);
+    text-shadow: 2px 2px blue;
+    text-align:center;
+    color:red; 
+    background-color: purple;
+   padding-top: 5px;
+}
+h1:hover
+{
+   color:purple; 
+}
+ .xyz{
+    color:red;
+    font-weight:bold;
+    font-size:30px;
+    padding-left: 900px;
+}
+a:hover {
+    color:purple;
+}
+.pqr{
+    padding-top: 500px;
+    font-size: x-large;
+    text-align: center;
+    
+}
+
+.ragini{
+   font-size: x-large;
+    text-align: center; 
+}
+li{
+    font-size: xx-large;
+}
+.navbar-brand{
+    font-size: x-large;
+}

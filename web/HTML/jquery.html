@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>changing image on mouse over</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+      $(function()
+      {
+          $('#idimg').hover(function()//on over
+          {
+              $('#idimg').attr('src','../CSS/o.jpg');
+          },
+          function()//on out
+          {
+           $('#idimg').attr('src','../CSS/demo2.jpg');
+   
+          });
+      });
+      </script>
+  </head>
+  <body>
+<img src="../CSS/demo2.jpg"  id="idimg" style="width:1900px;position:fixed;z-index: -1"/>
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" style="font-size: xx-large" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="jquery.html">Jquery</a></li>
+        
+        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+       
+      </ul>
+      <ul  class="nav navbar-nav navbar-right">
+        <li><a href="loginmon.html"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+        <li><a href="Register.html"><span class="glyphicon glyphicon-log-in"></span> SignUp</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+        <div style="text-align: left; font-family: sans-serif; font-size:xx-large; color:white;font-weight:bold; padding-top: 100px">
+    <h2 style="text-align: center;color:white; font-size: 40px">JQUERY</h2>  
+JQuery is a lightweight, "write less, do more", JavaScript library.
+
+The purpose of jQuery is to make it much easier to use JavaScript on your website.
+
+JQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+
+JQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.
+</div>
+</body>
+</html>
